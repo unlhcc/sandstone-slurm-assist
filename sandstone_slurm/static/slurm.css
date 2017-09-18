@@ -136,3 +136,14 @@ caption > i.fa-eye,
 caption > i.fa-eye-slash {
   cursor: pointer;
 }
+
+#slurm-main .nav-pills  {
+  border-color: #3e3f3a;
+  background-color: white;
+}
+
+#slurm-main .nav-pills > li>  a {
+ color: #3e3f3a;
+ border-color: #3e3f3a;
+ background-color: white;
+}
