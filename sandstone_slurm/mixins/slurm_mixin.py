@@ -33,7 +33,7 @@ class SlurmCmdMixin:
 
         filepath = kwargs.get('filepath')
 
-        cmd = ['sbatch',filepath]
+        cmd = ['sbatch','--get-user-env=10L',filepath]
         try:
             cmd_out = subprocess.check_output(cmd,stderr=subprocess.STDOUT)
             return (0, cmd_out)
